@@ -7,7 +7,7 @@ const stripe = new Stripe(process.env.STRIPE_KEY);
 // Place orderFrom frontend 
 const placeOrder = async(req,res)=>{
 
-    const furl = 'http://localhost:5174';
+    const furl = 'http://localhost:5173';
 
     try {
 

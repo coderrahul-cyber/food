@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import  { useContext, useEffect } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { StoreContext } from '../Context/StoreContext';
 import axios from 'axios';
@@ -7,6 +7,7 @@ function Verify() {
 
     const {url} = useContext(StoreContext);
 
+    // eslint-disable-next-line no-unused-vars
     const [searchParams , setsearchParams] = useSearchParams();
     const success = searchParams.get("success");
     const orderid = searchParams.get("orderId");
@@ -27,6 +28,7 @@ function Verify() {
 
         verifyPayment();
 
+     // eslint-disable-next-line react-hooks/exhaustive-deps
      },[])
 
   return (
